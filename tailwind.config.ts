@@ -16,7 +16,7 @@ const config: Config = {
         "bg2-dark": "var(--bg-secondary-dark)"
       },
       fontFamily: {
-        serif: ['var(--font-open-sans)']
+        'serif': ['var(--font-lato)']
       }
     },
     fontSize: {
@@ -24,8 +24,9 @@ const config: Config = {
       'base': '1.125rem',
       'lg': '1.5rem',
       'xl': '2.25rem',
-      '2xl': '6rem'
-    }
+      '2xl': '4.5rem',
+      '3xl': '6rem'
+    },
   },
   plugins: [],
   darkMode: 'class'

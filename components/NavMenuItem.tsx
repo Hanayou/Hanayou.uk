@@ -14,7 +14,7 @@ export default function NavMenuItem({ href, text, Icon }: Props) {
         <li>
             <Link
                 href={href}
-                className={`flex flex-col sm:flex-row items-center sm:gap-2 text-sm sm:text-lg dark:text-white transition-all duration-500 ${
+                className={`flex flex-col sm:flex-row items-center sm:gap-2 text-sm sm:text-lg transition-all duration-500 ${
                     usePathname() === href
                         ? "text-primary dark:text-primary"
                         : ""
