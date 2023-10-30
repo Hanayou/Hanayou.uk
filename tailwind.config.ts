@@ -27,6 +27,9 @@ const config: Config = {
       '2xl': '4.5rem',
       '3xl': '6rem'
     },
+    screens: {
+      'xl': '1400px'
+    }
   },
   plugins: [],
   darkMode: 'class'

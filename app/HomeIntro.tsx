@@ -10,17 +10,17 @@ import IconYouTube from "~icons/ph/youtube-logo-fill.jsx";
 
 export default function HomeIntro() {
     return (
-        <div className="flex flex-row items-center px-5 max-w-7xl m-auto">
-            <div className="flex flex-col gap-10 items-center sm:items-start max-w-lg">
+        <div className="flex flex-col-reverse xl:flex-row items-center max-w-7xl m-auto">
+            <div className="flex flex-col flex-1 gap-10 px-5 xl:px-0 items-center xl:items-start">
                 <h2 className="text-xl">
                     Hi, I'm <span className="text-primary">Sam</span>
                 </h2>
-                <h1 className="text-2xl sm:text-3xl font-bold leading-none text-center sm:text-left transition-all duration-500">
+                <h1 className="text-2xl xl:text-3xl font-bold leading-none text-center xl:text-left transition-all duration-500">
                     Software
                     <br />
                     <span className="text-primary">Engineer /&gt;</span>
                 </h1>
-                <p className="text-center sm:text-left">
+                <p className="text-center xl:text-left max-w-lg">
                     Passionate engineer with over 5 years of professional
                     development and consulting experience. Always looking to
                     expand knowledge and develop exciting, cutting edge
@@ -46,15 +46,20 @@ export default function HomeIntro() {
                     <SocialIcon href="#" Icon={IconYouTube} />
                 </ul>
             </div>
-            <div className="flex justify-end relative z-0 m-auto">
-                <div className="bg-primary rounded-full h-[320px] w-[320px]"></div>
-                <Image
-                    src="/sam.png"
-                    alt="Picture of me (Sam)"
-                    width={320}
-                    height={320}
-                    className="absolute z-10 bottom-0 rounded-full"
-                />
+            <div className="xl:relative flex-1 w-[calc(100vw-(100vw-100%))] xl:h-screen">
+                <div className="absolute z-30 h-full clip-bgimage bg-bg1 dark:bg-bg1-dark w-full invisible xl:visible"></div>
+                <div className="mx-auto mt-40 mb-20 xl:my-0 xl:absolute z-30 xl:top-1/2 xl:translate-y-[-50%] xl:left-1/2 xl:translate-x-[-50%] bg-bg1 dark:bg-bg1 rounded-full h-[21.875rem] w-[21.875rem]">
+                    <div className="absolute z-30 bottom-1/2 xl:top-1/2 xl:translate-y-[-50%] xl:left-1/2 xl:translate-x-[-50%] bg-primary rounded-full h-80 w-80 drop-shadow-2xl">
+                        <div className="absolute w-80 h-[23.25rem] bottom-0">
+                            <Image
+                                src="/sam.png"
+                                alt="Picture of me (Sam)"
+                                fill={true}
+                                className="rounded-b-full"
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

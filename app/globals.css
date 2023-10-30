@@ -9,3 +9,9 @@
     --bg-primary-dark: #22272e;
     --bg-secondary-dark: #181c22;
 }
+
+@layer utilities {
+    .clip-bgimage {
+        clip-path: polygon(75% 0, 0 0, 0 100%, 25% 100%);
+    }
+}
