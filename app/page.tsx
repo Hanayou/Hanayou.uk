@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import HomeIntro from "./HomeIntro";
+import HomeBackgroundImage from "@/components/HomeBackgroundImage";
 
 export const metadata: Metadata = {
     title: "Hanayou - Personal Portfolio",
@@ -11,15 +11,7 @@ export default function Home() {
     return (
         <main>
             <HomeIntro />
-            <div className="absolute w-[50%] h-screen top-0 right-0 invisible xl:visible overflow-hidden">
-                <Image
-                    src="/japan.jpg"
-                    fill={true}
-                    alt="FILL IN LATER"
-                    className="z-20 object-cover blur-[2px]"
-                />
-            </div>
-            <HomeIntro />
+            <HomeBackgroundImage />
         </main>
     );
 }
