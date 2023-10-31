@@ -12,24 +12,24 @@ export default function HomeIntro() {
     return (
         <div className="flex flex-col-reverse xl:flex-row items-center max-w-7xl m-auto">
             <div className="flex flex-col flex-1 gap-10 px-5 xl:px-0 items-center xl:items-start">
-                <h2 className="text-xl">
+                <h2 className="text-xl xl:ml-5">
                     Hi, I'm <span className="text-primary">Sam</span>
                 </h2>
-                <h1 className="text-2xl xl:text-3xl font-bold leading-none text-center xl:text-left transition-all duration-500">
+                <h1 className="text-2xl xl:ml-5 xl:text-3xl font-bold leading-none text-center xl:text-left transition-all duration-500">
                     Software
                     <br />
                     <span className="text-primary">Engineer /&gt;</span>
                 </h1>
-                <p className="text-center xl:text-left max-w-lg">
+                <p className="text-center xl:ml-5 xl:text-left max-w-lg">
                     Passionate engineer with over 5 years of professional
                     development and consulting experience. Always looking to
                     expand knowledge and develop exciting, cutting edge
                     products.
                 </p>
-                <button className="bg-primary px-8 py-5 rounded-xl text-white text-lg max-w-fit">
+                <button className="bg-primary xl:ml-5 px-8 py-5 rounded-xl text-white text-lg max-w-fit">
                     See My Projects
                 </button>
-                <ul className="flex flew-row items-center gap-3">
+                <ul className="flex xl:ml-5 flew-row items-center gap-3">
                     <SocialIcon
                         href="https://github.com/Hanayou"
                         Icon={IconGitHub}

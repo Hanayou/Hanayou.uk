@@ -28,7 +28,7 @@ const config: Config = {
       '3xl': '6rem'
     },
     screens: {
-      'xl': '1400px'
+      'xl': '1100px'
     }
   },
   plugins: [],
