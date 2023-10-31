@@ -49,7 +49,7 @@ export default function HomeIntro() {
             <div className="xl:relative flex-1 w-[calc(100vw-(100vw-100%))] xl:h-screen">
                 <div className="relative z-30 h-full clip-bgimage bg-bg1 dark:bg-bg1-dark w-full invisible xl:visible"></div>
                 <div className="mx-auto mt-40 mb-20 xl:my-0 xl:absolute z-0 xl:z-30 xl:top-1/2 xl:translate-y-[-50%] xl:left-1/2 xl:translate-x-[-50%] bg-bg1 dark:bg-bg1-dark rounded-full h-[21.875rem] w-[21.875rem]">
-                    <div className="relative top-[0.938rem] left-[0.938rem] bg-primary rounded-full h-80 w-80 drop-shadow-[0_0_8px_rgba(0,0,0,0.6)]">
+                    <div className="relative top-[0.938rem] left-[0.938rem] bg-primary rounded-full h-80 w-80 drop-shadow-sm">
                         <div className="absolute w-80 h-[23.25rem] bottom-0">
                             <Image
                                 src="/sam.png"

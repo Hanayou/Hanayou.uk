@@ -17,6 +17,9 @@ const config: Config = {
       },
       fontFamily: {
         'serif': ['var(--font-lato)']
+      },
+      dropShadow: {
+        'sm': '0 0px 8px rgba(0, 0, 0, 0.6)'
       }
     },
     fontSize: {

@@ -2,6 +2,7 @@ import { Lato } from "next/font/google";
 import "./globals.css";
 
 import NavMenu from "@/app/NavMenu";
+import Settings from "@/components/Settings";
 
 const lato = Lato({
     weight: ["400", "700"],
@@ -22,6 +23,7 @@ export default function RootLayout({
         >
             <body className="bg-bg1 dark:bg-bg1-dark font-serif text-black dark:text-white">
                 <NavMenu />
+                <Settings />
                 {children}
             </body>
         </html>
