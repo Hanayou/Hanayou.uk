@@ -6,7 +6,7 @@ interface Props {
     href: string;
     text: string;
     //@ts-ignore
-    Icon: SVGIcon;
+    Icon: React.ReactNode;
 }
 
 export default function NavMenuItem({ href, text, Icon }: Props) {
@@ -20,7 +20,7 @@ export default function NavMenuItem({ href, text, Icon }: Props) {
                         : ""
                 }`}
             >
-                <Icon className="text-lg" />
+                {Icon}
                 {text}
             </Link>
         </li>

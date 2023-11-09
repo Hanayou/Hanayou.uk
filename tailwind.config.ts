@@ -20,6 +20,9 @@ const config: Config = {
       },
       dropShadow: {
         'sm': '0 0px 8px rgba(0, 0, 0, 0.6)'
+      },
+      width: {
+        'screen-scrollbar': 'calc(100vw-(100vw-100%))'
       }
     },
     fontSize: {

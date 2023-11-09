@@ -1,8 +1,8 @@
 import { Lato } from "next/font/google";
 import "./globals.css";
 
-import NavMenu from "@/app/NavMenu";
-import Settings from "@/components/Settings";
+import NavMenu from "@/app/components/NavMenu";
+import Settings from "@/app/components/Settings";
 
 const lato = Lato({
     weight: ["400", "700"],
